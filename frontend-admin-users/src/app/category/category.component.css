@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+  }
+  mat-card{
+    margin: 5px;
+    font-family:Arial, Helvetica, sans-serif!important;
+    font-size:10px !important;
+   
+    
+  }
+  mat-card-content table{
+    border-radius: 10px;
+    
+    padding: 16px;
+  }

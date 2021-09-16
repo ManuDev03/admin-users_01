@@ -14,12 +14,19 @@ import { MatListModule} from '@angular/material/list';
 import { MatSidenavModule} from '@angular/material/sidenav'
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { CategoryComponent } from './category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    DashboardComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     MatMenuModule,
     MatDividerModule,
     MatListModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

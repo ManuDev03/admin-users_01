@@ -8,34 +8,40 @@
             close
         </mat-icon>
     </button>
-    Manu App 
+    E-Kart.com
 </mat-toolbar>
 
-<mat-sidenav-container >
+<mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav">
-            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Rameshkartik RS"> 
-            <h4 class="name">Manu</h4>
-        
-        <p class="designation">Software Engineer</p>
-        <mat-divider></mat-divider>
-        <button mat-button class="menu-button">
-        <mat-icon>home</mat-icon>
-        <span>Home</span>
-    </button>
-    <button mat-button class="menu-button">
-        <mat-icon>person</mat-icon>
-        <span>Profile</span>
-    </button>
-    <button mat-button class="menu-button">
-        <mat-icon>info</mat-icon>
-        <span>About</span>
-    </button>
+        <mat-nav-list>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard">
+                <mat-icon>assessment</mat-icon> Dashboard
+            </a>
+
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+                <mat-icon>work</mat-icon> Products
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/categories">
+                <mat-icon>view_list</mat-icon> Category
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+                <mat-icon>shopping_cart</mat-icon> Orders
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+                <mat-icon>supervisor_account</mat-icon> Users
+            </a>
+            <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
+                <mat-icon>person</mat-icon> Logout
+            </a>
+
+        </mat-nav-list>
+
     </mat-sidenav>
     <mat-sidenav-content>
         <div class="content mat-elevation-z4">
-            Main content
+
+            <router-outlet></router-outlet>
+
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
-
-
